@@ -89,10 +89,15 @@ namespace slnExamenParcial_DanteQuispe
             txtBox3.Text = "S/." + totalDescuento.ToString();
             txtBox2.Text = "S/." + totalImporte.ToString();
             txtBox4.Text = "S/." + precioUnit.ToString();
-            txtBox5.Text = descuento.ToString()+"%";
+            txtBox5.Text = descuento.ToString() + "%";
         }
 
         private void lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPregunta03_Load(object sender, EventArgs e)
         {
 
         }
