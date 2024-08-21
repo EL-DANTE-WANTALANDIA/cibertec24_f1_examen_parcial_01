@@ -132,6 +132,7 @@
             Controls.Add(lbl1);
             Name = "frmPregunta04";
             Text = "frmPregunta04";
+            Load += frmPregunta04_Load;
             ResumeLayout(false);
             PerformLayout();
         }

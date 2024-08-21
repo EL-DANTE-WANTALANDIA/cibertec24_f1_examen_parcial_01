@@ -33,17 +33,19 @@
             pregunta02ToolStripMenuItem = new ToolStripMenuItem();
             pregunta03ToolStripMenuItem = new ToolStripMenuItem();
             pregunta04ToolStripMenuItem = new ToolStripMenuItem();
+            pregunta05ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { pregunta01ToolStripMenuItem, pregunta02ToolStripMenuItem, pregunta03ToolStripMenuItem, pregunta04ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { pregunta01ToolStripMenuItem, pregunta02ToolStripMenuItem, pregunta03ToolStripMenuItem, pregunta04ToolStripMenuItem, pregunta05ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // pregunta01ToolStripMenuItem
             // 
@@ -73,6 +75,13 @@
             pregunta04ToolStripMenuItem.Text = "Pregunta04";
             pregunta04ToolStripMenuItem.Click += pregunta04ToolStripMenuItem_Click;
             // 
+            // pregunta05ToolStripMenuItem
+            // 
+            pregunta05ToolStripMenuItem.Name = "pregunta05ToolStripMenuItem";
+            pregunta05ToolStripMenuItem.Size = new Size(79, 20);
+            pregunta05ToolStripMenuItem.Text = "Pregunta05";
+            pregunta05ToolStripMenuItem.Click += pregunta05ToolStripMenuItem_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -97,5 +106,6 @@
         private ToolStripMenuItem pregunta02ToolStripMenuItem;
         private ToolStripMenuItem pregunta03ToolStripMenuItem;
         private ToolStripMenuItem pregunta04ToolStripMenuItem;
+        private ToolStripMenuItem pregunta05ToolStripMenuItem;
     }
 }

@@ -36,5 +36,15 @@ namespace slnExamenParcial_DanteQuispe
         {
             MostrarForm(new frmPregunta04());
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pregunta05ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            MostrarForm(new frmPregunta05());
+        }
     }
 }

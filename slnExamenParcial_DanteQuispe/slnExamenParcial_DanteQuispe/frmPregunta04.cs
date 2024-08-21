@@ -27,7 +27,7 @@ namespace slnExamenParcial_DanteQuispe
         {
             //throw new NotImplementedException();
             //Constantes
- 
+
             //Variables
             double donacionAnual = Convert.ToDouble(txtBox1.Text);
 
@@ -61,6 +61,11 @@ namespace slnExamenParcial_DanteQuispe
             txtBox2.Text = "$." + totalImporteCentroSalud.ToString();
             txtBox3.Text = "$." + totalImporteComedorNinios.ToString();
             txtBox4.Text = "$." + totalBolsa.ToString();
+        }
+
+        private void frmPregunta04_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
