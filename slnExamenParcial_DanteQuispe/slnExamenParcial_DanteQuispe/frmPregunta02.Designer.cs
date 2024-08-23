@@ -33,6 +33,8 @@
             lbl2 = new Label();
             txtBox2 = new TextBox();
             button1 = new Button();
+            lbl3 = new Label();
+            lbl4 = new Label();
             SuspendLayout();
             // 
             // lbl1
@@ -77,6 +79,24 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // lbl3
+            // 
+            lbl3.AutoSize = true;
+            lbl3.Location = new Point(419, 61);
+            lbl3.Name = "lbl3";
+            lbl3.Size = new Size(66, 15);
+            lbl3.TabIndex = 0;
+            lbl3.Text = "Descuento:";
+            // 
+            // lbl4
+            // 
+            lbl4.AutoSize = true;
+            lbl4.Location = new Point(537, 61);
+            lbl4.Name = "lbl4";
+            lbl4.Size = new Size(28, 15);
+            lbl4.TabIndex = 0;
+            lbl4.Text = "IGV:";
+            // 
             // frmPregunta02
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -85,6 +105,8 @@
             Controls.Add(button1);
             Controls.Add(txtBox2);
             Controls.Add(txtBox1);
+            Controls.Add(lbl3);
+            Controls.Add(lbl4);
             Controls.Add(lbl2);
             Controls.Add(lbl1);
             Name = "frmPregunta02";
@@ -101,5 +123,7 @@
         private Label lbl2;
         private TextBox txtBox2;
         private Button button1;
+        private Label lbl3;
+        private Label lbl4;
     }
 }

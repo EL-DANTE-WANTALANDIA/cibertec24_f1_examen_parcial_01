@@ -16,7 +16,10 @@ namespace slnExamenParcial_DanteQuispe
             frm.MdiParent = this;
             frm.Show();
         }
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
+        }
         private void pregunta01ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MostrarForm(new frmPregunta01());
@@ -37,11 +40,6 @@ namespace slnExamenParcial_DanteQuispe
             MostrarForm(new frmPregunta04());
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void pregunta05ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             MostrarForm(new frmPregunta05());
@@ -50,6 +48,11 @@ namespace slnExamenParcial_DanteQuispe
         private void pregunta06ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MostrarForm(new frmPregunta06());
+        }
+
+        private void pregunta07ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostrarForm(new frmPregunta07());
         }
     }
 }

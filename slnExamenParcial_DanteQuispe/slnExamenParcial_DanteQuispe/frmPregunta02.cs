@@ -29,20 +29,25 @@ namespace slnExamenParcial_DanteQuispe
         private void DeterminarMonto()
         {
             //throw new NotImplementedException();
+            // Limpiar el LabelText
+            lbl3.Text = "";
+            lbl4.Text = "";
             //Constantes
             double IGV = 0.18;
-            double Descuento = 0.12;
+            double descuento = 0.12;
             //Variables
             //Proceso
             double precioCompras = Convert.ToDouble(txtBox1.Text);
-
-            var precioConDescuento = precioCompras - (precioCompras * Descuento);
+            var precioDescuento = precioCompras * descuento;
+            var precioConDescuento = precioCompras - precioDescuento;
             var totalIGV = precioConDescuento * IGV;
 
             //Salida
-            double totalMonto = precioConDescuento - totalIGV;
+            double totalMonto = precioConDescuento + totalIGV;
 
             txtBox2.Text = totalMonto.ToString();
+            lbl3.Text = $"Descuento: {precioDescuento}";
+            lbl4.Text = $"IGV: {totalIGV}";
 
         }
 

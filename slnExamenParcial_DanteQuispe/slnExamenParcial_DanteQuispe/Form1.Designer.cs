@@ -35,12 +35,13 @@
             pregunta04ToolStripMenuItem = new ToolStripMenuItem();
             pregunta05ToolStripMenuItem = new ToolStripMenuItem();
             pregunta06ToolStripMenuItem = new ToolStripMenuItem();
+            pregunta07ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { pregunta01ToolStripMenuItem, pregunta02ToolStripMenuItem, pregunta03ToolStripMenuItem, pregunta04ToolStripMenuItem, pregunta05ToolStripMenuItem, pregunta06ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { pregunta01ToolStripMenuItem, pregunta02ToolStripMenuItem, pregunta03ToolStripMenuItem, pregunta04ToolStripMenuItem, pregunta05ToolStripMenuItem, pregunta06ToolStripMenuItem, pregunta07ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -90,6 +91,13 @@
             pregunta06ToolStripMenuItem.Text = "Pregunta06";
             pregunta06ToolStripMenuItem.Click += pregunta06ToolStripMenuItem_Click;
             // 
+            // pregunta07ToolStripMenuItem
+            // 
+            pregunta07ToolStripMenuItem.Name = "pregunta07ToolStripMenuItem";
+            pregunta07ToolStripMenuItem.Size = new Size(79, 20);
+            pregunta07ToolStripMenuItem.Text = "Pregunta07";
+            pregunta07ToolStripMenuItem.Click += pregunta07ToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -116,5 +124,6 @@
         private ToolStripMenuItem pregunta04ToolStripMenuItem;
         private ToolStripMenuItem pregunta05ToolStripMenuItem;
         private ToolStripMenuItem pregunta06ToolStripMenuItem;
+        private ToolStripMenuItem pregunta07ToolStripMenuItem;
     }
 }
