@@ -153,6 +153,7 @@
             Controls.Add(cmbBox1);
             Name = "frmPregunta05";
             Text = "frmPregunta05";
+            Load += frmPregunta05_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();

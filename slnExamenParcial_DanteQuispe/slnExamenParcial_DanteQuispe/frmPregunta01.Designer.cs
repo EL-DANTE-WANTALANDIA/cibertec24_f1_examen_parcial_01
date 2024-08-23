@@ -1,6 +1,6 @@
 ﻿namespace slnExamenParcial_DanteQuispe
 {
-    partial class frmPregunta1
+    partial class frmPregunta01
     {
         /// <summary>
         /// Required designer variable.
@@ -109,7 +109,7 @@
             Controls.Add(lbl1);
             Name = "frmPregunta1";
             Text = "frmPregunta1";
-            Load += frmPregunta1_Load;
+            Load += frmPregunta01_Load;
             ResumeLayout(false);
             PerformLayout();
         }

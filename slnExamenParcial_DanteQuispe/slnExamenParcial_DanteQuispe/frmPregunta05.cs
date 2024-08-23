@@ -37,10 +37,9 @@ namespace slnExamenParcial_DanteQuispe
             CalcularPension();
         }
 
-        
+
         private void CalcularPension()
         {
-
             //throw new NotImplementedException();
             //Constantes
             int pensionA = 550, pensionB = 500, pensionC = 460, pensionD = 400;
@@ -49,31 +48,31 @@ namespace slnExamenParcial_DanteQuispe
             double descuento = 0.0, pensionActual = 0.0;
 
             //Entrada
-            string categoria = cmbBox1.;
+            var categoria = cmbBox1.SelectedItem;
             double promedio = Convert.ToDouble(numericUpDown1.Text);
 
             //Proceso
             switch (categoria)
             {
                 case "A":
-                    if (0 < promedio && promedio < 13.99)
+                    if (0 <= promedio && promedio <= 13.99)
                     {
                         descuento = 0;
                         pensionActual = pensionA;
                     }
-                    else if (14.00 < promedio && promedio < 15.99)
+                    else if (14.00 <= promedio && promedio <= 15.99)
                     {
-                        descuento = pensionA - (pensionA * 0.1);
+                        descuento = pensionA * 0.1;
                         pensionActual = pensionA - descuento;
                     }
-                    else if (16.00 < promedio && promedio < 17.99)
+                    else if (16.00 <= promedio && promedio <= 17.99)
                     {
-                        descuento = pensionA - (pensionA * 0.12);
+                        descuento = pensionA * 0.12;
                         pensionActual = pensionA - descuento;
                     }
                     else
                     {
-                        descuento = pensionA - (pensionA * 0.15);
+                        descuento = pensionA * 0.15;
                         pensionActual = pensionA - descuento;
                     }
 
@@ -84,24 +83,24 @@ namespace slnExamenParcial_DanteQuispe
                     break;
 
                 case "B":
-                    if (0 < promedio && promedio < 13.99)
+                    if (0 <= promedio && promedio <= 13.99)
                     {
                         descuento = 0;
                         pensionActual = pensionB;
                     }
-                    else if (14.00 < promedio && promedio < 15.99)
+                    else if (14.00 <= promedio && promedio <= 15.99)
                     {
-                        descuento = pensionB - (pensionB * 0.1);
+                        descuento = pensionB * 0.1;
                         pensionActual = pensionB - descuento;
                     }
-                    else if (16.00 < promedio && promedio < 17.99)
+                    else if (16.00 <= promedio && promedio <= 17.99)
                     {
-                        descuento = pensionB - (pensionB * 0.12);
+                        descuento = pensionB * 0.12;
                         pensionActual = pensionB - descuento;
                     }
                     else
                     {
-                        descuento = pensionB - (pensionB * 0.15);
+                        descuento = pensionB * 0.15;
                         pensionActual = pensionB - descuento;
                     }
 
@@ -112,24 +111,24 @@ namespace slnExamenParcial_DanteQuispe
                     break;
 
                 case "C":
-                    if (0 < promedio && promedio < 13.99)
+                    if (0 <= promedio && promedio <= 13.99)
                     {
                         descuento = 0;
                         pensionActual = pensionC;
                     }
-                    else if (14.00 < promedio && promedio < 15.99)
+                    else if (14.00 <= promedio && promedio <= 15.99)
                     {
-                        descuento = pensionC - (pensionC * 0.1);
+                        descuento = pensionC * 0.1;
                         pensionActual = pensionC - descuento;
                     }
-                    else if (16.00 < promedio && promedio < 17.99)
+                    else if (16.00 <= promedio && promedio <= 17.99)
                     {
-                        descuento = pensionC - (pensionC * 0.12);
+                        descuento = pensionC * 0.12;
                         pensionActual = pensionC - descuento;
                     }
                     else
                     {
-                        descuento = pensionC - (pensionC * 0.15);
+                        descuento = pensionC * 0.15;
                         pensionActual = pensionC - descuento;
                     }
 
@@ -140,24 +139,24 @@ namespace slnExamenParcial_DanteQuispe
                     break;
 
                 default:
-                    if (0 < promedio && promedio < 13.99)
+                    if (0 <= promedio && promedio <= 13.99)
                     {
                         descuento = 0;
                         pensionActual = pensionD;
                     }
-                    else if (14.00 < promedio && promedio < 15.99)
+                    else if (14.00 <= promedio && promedio <= 15.99)
                     {
-                        descuento = pensionD - (pensionD * 0.1);
+                        descuento = pensionD * 0.1;
                         pensionActual = pensionD - descuento;
                     }
-                    else if (16.00 < promedio && promedio < 17.99)
+                    else if (16.00 <= promedio && promedio <= 17.99)
                     {
-                        descuento = pensionD - (pensionD * 0.12);
+                        descuento = pensionD * 0.12;
                         pensionActual = pensionD - descuento;
                     }
                     else
                     {
-                        descuento = pensionD - (pensionD * 0.15);
+                        descuento = pensionD * 0.15;
                         pensionActual = pensionD - descuento;
                     }
 
@@ -172,5 +171,9 @@ namespace slnExamenParcial_DanteQuispe
 
         }
 
+        private void frmPregunta05_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

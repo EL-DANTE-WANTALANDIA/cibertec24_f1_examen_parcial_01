@@ -19,7 +19,7 @@ namespace slnExamenParcial_DanteQuispe
 
         private void pregunta01ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MostrarForm(new frmPregunta1());
+            MostrarForm(new frmPregunta01());
         }
 
         private void pregunta02ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace slnExamenParcial_DanteQuispe
         private void pregunta05ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             MostrarForm(new frmPregunta05());
+        }
+
+        private void pregunta06ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostrarForm(new frmPregunta06());
         }
     }
 }

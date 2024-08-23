@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace slnExamenParcial_DanteQuispe
 {
-    public partial class frmPregunta1 : Form
+    public partial class frmPregunta01 : Form
     {
 
-        public frmPregunta1()
+        public frmPregunta01()
         {
             InitializeComponent();
         }
 
-        private void frmPregunta1_Load(object sender, EventArgs e)
+        private void frmPregunta01_Load(object sender, EventArgs e)
         {
 
         }
